@@ -4,7 +4,7 @@ print("")
 #Read the entire text as a string.
 
 def readBook():
-  f = open("dracula-short.txt", "r")
+  f = open("dracula.txt", "r")
   s = f.read().replace("-", " ")
   f.close()
   return ''.join(c for c in s if c.isalnum() or c == " ")
@@ -52,10 +52,10 @@ print("")
 #Find the words that are most common and print out their value.
 
 
-print("The most common words (words with 50 or more occurances) are: ")
+print("The most common words (words with 500 or more occurances) are: ")
 print("")
 for key, value in counterTuple:
-  if value >= 50:
+  if value >= 500:
     print("The word", "'" + key.upper() + "'", "appears", value, "times.")
 print("")
 
